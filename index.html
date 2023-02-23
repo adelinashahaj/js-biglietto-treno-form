@@ -9,6 +9,7 @@
 </head>
 <body>
       <h1>Calcola il prezzo del tuo biglietto</h1>
+
     <form>
         <div>Nome Cognome</div>
         <input type="text" id="nomeViaggiatore"/>
@@ -21,8 +22,10 @@
             <option value="sotto18">Sotto 18</option>
             <option value="maggiorenni">Tutti gli altri</option>
         </select>
-    </form><button id="leggiForm">Leggi i valori del form</button>
-
+    </form>
+    <button id="leggiForm" type="button" name="button">Genera</button>
+    <button id="annulla" type="button" name="button">Annulla</button>
+<div id="ticket">
     <h1>Il tuo biglietto</h1>
     <div id="nome">Nome passeggero</div>
     <div id="offerta">Offerta</div>
@@ -30,8 +33,10 @@
     <div id="codice">Codice CP</div>
     <div id="costo">Costo biglietto</div>
     
+</div>
     
-   <h2 id="biglietto"></h2>
+    
+   
    
 
 

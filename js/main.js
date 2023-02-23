@@ -1,4 +1,11 @@
 
+
+
+
+
+var annulla = document.getElementById("annulla");
+var ticket = document.getElementById("ticket");
+
 const domButton = document.querySelector('#leggiForm');
 
 domButton.addEventListener('click', 
@@ -39,7 +46,7 @@ domButton.addEventListener('click',
         }
 
          console.log(prezzo);
-        document.getElementById("costo").innerHTML = `prezzo biglietto <br> <br> ${prezzo} euro`;
+        document.getElementById("costo").innerHTML = `Costo biglietto <br> <br> ${prezzo} euro`;
    
         console.log(kilometri);
 
@@ -53,5 +60,12 @@ document.getElementById("carrozza").innerHTML = "Carrozza <br><br>"  + Math.ceil
 document.getElementById("codice").innerHTML ="Codice CP <br><br>" + Math.ceil(Math.random() * (100000 - 90000) + 90000);
 
 
-
+annulla.addEventListener('click',
+  function() {
+    ticket.style.visibility = "hidden";
+    document.getElementById("nome").value = "";
+    document.getElementById("offerta").value = "";
+    document.getElementById("costo").value = "minorenne";
+  }
+);
 
