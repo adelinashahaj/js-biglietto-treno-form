@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(163, 32, 54);
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.info{
+    border: solid 1px black;
+    background-color: white;
+    padding: 35px 0px;
+    border-radius: 10px;
+    
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+.tx{
+    text-align: center;
+}
+.tx-color{
+    color: white;
+}
+form{
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.mg-bottom{
+    margin-bottom: 20px;
+}
+.tx-colorrosa{
+    color: palevioletred;
+}
+.btn{
+    text-align: center;
+    margin-left: 20px;
+}
+#ticket{
+    
+    border: solid 1px black;
+    background-color: white;
+    padding: 27px 20px;
+}
+.infoticket{
+    justify-content: space-around;
+}
+.margin{
+    margin-top: 0;
+    margin-bottom: 0;
+}

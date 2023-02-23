@@ -8,34 +8,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-      <h1>Calcola il prezzo del tuo biglietto</h1>
+<div class="container">
+    <h1 class="tx tx-color">Calcola il prezzo del tuo biglietto</h1>
+    <div class="info">
+        
 
-    <form>
-        <div>Nome Cognome</div>
-        <input type="text" id="nomeViaggiatore"/>
-       <div>Km da percorrere</div>
-        <input type="text" id="kilometri"/>
+        <form class="d-flex">
 
-         <div>Fascia d'età</div>
-        <select id="casellaSelezione">
-            <option value="sopra65">Sopra 65</option>
-            <option value="sotto18">Sotto 18</option>
-            <option value="maggiorenni">Tutti gli altri</option>
-        </select>
-    </form>
-    <button id="leggiForm" type="button" name="button">Genera</button>
-    <button id="annulla" type="button" name="button">Annulla</button>
-<div id="ticket">
-    <h1>Il tuo biglietto</h1>
-    <div id="nome">Nome passeggero</div>
-    <div id="offerta">Offerta</div>
-    <div id="carrozza">Carrozza</div>
-    <div id="codice">Codice CP</div>
-    <div id="costo">Costo biglietto</div>
+            <div class="">
+                <div class="mg-bottom tx-colorrosa">Nome Cognome</div>
+                <input type="text" id="nomeViaggiatore"/>
+            </div>
+           <div class="">
+            <div class="mg-bottom tx-colorrosa">Km da percorrere</div>
+            <input type="text" id="kilometri"/>
+    
+           </div>
+           <div class="">
+            <div class="mg-bottom tx-colorrosa">Fascia d'età</div>
+            <select id="casellaSelezione">
+                <option value="sopra65">Sopra 65</option>
+                <option value="sotto18">Sotto 18</option>
+                <option value="maggiorenni">Tutti gli altri</option>
+            </select>
+           </div>
+             
+        </form>
+        <div class="btn">
+            <button id="leggiForm" type="button" name="button">Genera</button>
+            <button id="annulla" type="button" name="button">Annulla</button>
+        </div>
+        
+        
+    </div>
+       
+    <h1 class="tx tx-color">Il tuo biglietto</h1>
+    <div id="ticket" >
+        <h3>Detaglio Passeggeri</h3>
+        <hr>
+         <div class="infoticket d-flex" >
+            <h4 id="nome" class="margin">Nome passeggero</h4>
+            <h4 id="offerta" class="margin">Offerta</h4>
+            <h4 id="carrozza" class="margin">Carrozza</h4>
+            <h4 id="codice" class="margin">Codice CP</h4>
+            <h4 id="costo" class="margin">Costo biglietto</h4>
+       
+         </div>
+        
+   </div>
     
 </div>
-    
-    
    
    
 
